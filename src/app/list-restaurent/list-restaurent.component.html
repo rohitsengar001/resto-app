@@ -1,0 +1,20 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name </th>
+        <th scope="col">Address</th>
+        <th scope="col">Mobile</th>
+        <th scope="col">Email</th>
+      </tr>
+    </thead>
+    <tbody>
+     <tr *ngfor="let resto of collection">
+       <td>{{resto.id}}</td>
+       <td>{{resto.name}}</td>
+       <td>{{resto.address}}</td>
+       <td>{{resto.mobile}}</td>
+       <td>{{resto.email}}</td>
+     </tr>
+    </tbody>
+  </table>
