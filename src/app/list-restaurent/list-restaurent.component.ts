@@ -1,3 +1,4 @@
+import { ClassGetter } from '@angular/compiler/src/output/output_ast';
 import { Component, OnInit } from '@angular/core';
 import {CommonService } from '../common.service';
 @Component({
@@ -6,14 +7,20 @@ import {CommonService } from '../common.service';
   styleUrls: ['./list-restaurent.component.css']
 })
 export class ListRestaurentComponent implements OnInit {
-public collection:any;
+collection
   constructor(private CommonService:CommonService) { }
 
-  ngOnInit(): void {
-    this.CommonService.getRestoList().subscribe((result)=>{
-      this.collection= result;
-      console.log(this.collection)
-    });
+  ngOnInit() {
+    // this.getdata()
+    this.CommonService.getRestoList().subscribe((result:any)=>{
+     this.collection= result;
+     console.log(this.collection)
+     console.log(result)
+   });
+   console.log(this.collection)
   }
+
+
+ 
 
 }

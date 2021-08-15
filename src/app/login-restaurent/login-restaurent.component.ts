@@ -1,15 +1,21 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonService } from '../common.service';
+import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-login-restaurent',
-  templateUrl: './login-restaurent.component.html',
-  styleUrls: ['./login-restaurent.component.css']
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.css']
 })
-export class LoginRestaurentComponent implements OnInit {
-
-  constructor() { }
+export class LoginComponent implements OnInit {
+  
+ 
+  constructor(private resto:CommonService, private router:Router) { }
 
   ngOnInit(): void {
-  }
-
-}
+    
+    }
+    
+    }
+    
+    

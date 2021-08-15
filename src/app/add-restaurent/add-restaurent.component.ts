@@ -7,6 +7,7 @@ import { CommonService } from '../common.service';
   styleUrls: ['./add-restaurent.component.css']
 })
 export class AddRestaurentComponent implements OnInit {
+  alert:boolean = false;
 addRestaurant=new FormGroup({
   name:new FormControl(''),
   Address:new FormControl(''),
@@ -19,7 +20,12 @@ constructor(private resto:CommonService) { }
   CreateResto(){
     //console.log(this.addRestaurant.value);
     this.resto.addResto(this.addRestaurant.value).subscribe((result)=>{
+      this.alert= true;
+      this.addRestaurant.reset({});
       console.log("Get data from service",result)
     })
+  }
+  closeAlert(){
+    this.alert= false;
   }
 }
