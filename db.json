@@ -1,19 +1,58 @@
 {
-  "posts": [
+  "resto": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "name": "Shivangi saxena",
+      "Address": "Meerut road,Ghaziabad, uttarpradesh",
+      "email": "shivangi@gmail.com",
+      "id": 1
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "name": "neha",
+      "Address": "kanpur",
+      "email": "neha@gmail.com",
+      "id": 2
+    },
+    {
+      "name": "Shivangi saxena",
+      "Address": "Meerut road,Ghaziabad, uttarpradesh",
+      "email": "Shivangi@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "NMB",
+      "Address": "Mainpuri",
+      "email": "nmb@gmail.com",
+      "id": 4
+    },
+    {
+      "name": "suruchi  Hotel &restaurants",
+      "Address": "Patna",
+      "email": "suruchi@gmail.com",
+      "id": 5
+    },
+    {
+      "name": "Suresh food plaza",
+      "Address": "Jabalpur",
+      "email": "suresh@gmail.com",
+      "id": 6
+    },
+    {
+      "name": "gudden provision store",
+      "Address": "Etawah",
+      "email": "gudden@gmail.com",
+      "id": 7
+    },
+    {
+      "name": "saumya hotel",
+      "Address": "Goa",
+      "email": "saumya@gmail.com",
+      "id": 8
+    },
+    {
+      "name": "Lallan dhaba",
+      "Address": "jaswantnagar",
+      "email": "lallan@gmail.com",
+      "id": 9
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

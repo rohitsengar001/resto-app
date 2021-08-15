@@ -8,24 +8,24 @@ import { CommonService } from '../common.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  
-  alert:boolean = false;
-  email:string;
-  password:string;
- 
-  constructor(private resto:CommonService, private router:Router) { }
+
+  alert: boolean = false;
+  email: string;
+  password: string;
+
+  constructor(private resto: CommonService, private router: Router) { }
 
   ngOnInit(): void {
-    
+
+  }
+  logIn() {
+    console.log('login working!!')
+    if (this.email == "admin@gmail.com" && this.password == "Admin@123") {
+      this.router.navigate(["./list"]);
     }
-    logIn(){
-     console.log('login working!!')
-    // if(this.email == "admin@gmail.com" && this.password =="Admin@123"){
-    //   this.router.navigate(["./list"]);
-    // }
-    // else{
-    //   alert("Please Enter Valid Details");
-    // }
+    else {
+      alert("Please Enter Valid Details");
     }
+  }
 
 }
